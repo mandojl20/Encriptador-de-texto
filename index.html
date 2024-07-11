@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="shortcut icon" href="./assets/icono.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"> <img src="./assets/logo.png" alt="Logo alura"></a>
+    </header>
+
+    <main class="contenedor">
+        <section class="contenedor__input">
+            <textarea class="contenedor__input__text" id="entradaTexto" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="contenedor__input__indicacion">
+                <img src="./assets/exclamation.png" alt="Imágen exclamacion">
+                <p class="contenedor__input__indicacion__texto">
+                    Solo letras minusculas y sin acentos
+               </p>
+            </div>
+            <div class="contenedor__input__botones">
+                <p class="contenedor__boton1" onclick="encriptar();">
+                    Encriptar
+                </p>
+                <p class="contenedor__boton2" onclick="desencriptar();">
+                    Desencriptar
+                </p>
+            </div>
+
+        </section>
+        <div class="contenedor__output" id="output-text">
+            <div id="contenedor__output_mensaje">
+                <p id="output_mensaje">hola nundo</p>
+            </div>
+            <p id="output_mensaje"></p>
+            <img class="contenedor__output__imagen" id="output_imagen" src="./assets/muñeco.png" alt="Imágen texto no encontrado">
+            <h2 class="contenedor_output_titulo" id="output_titulo">
+                Ningun mensaje fue encontrado
+            </h2>
+            <p class="contenedor_output_texto" id="output_texto">
+                Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+            <p id="contenedor__boton3" onclick="copiar();">
+                Copiar
+            </p>          
+        </div>
+    </main>
+
+    <footer class="footer">
+        Desarrollado por Julio López para el Challenge Encriptador de Alura, 2024.
+    </footer>
+    
+</body>
+<script src="app.js" defer></script>
+</html>
