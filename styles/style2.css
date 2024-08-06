@@ -187,9 +187,43 @@ body {
 
 @media (max-width: 768px) {
     .contenedor {
-        display:grid;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
         gap: 2rem;
+        max-height: auto;
+    }
 
+    .contenedor__input__text {
+        background-color: transparent;  
+        width:min-content;
+        height: 20rem;
+        margin: 1rem;
+        padding: 1rem;
+        border: none;
+        color: var(--color-terciario);
+        font-size: 2rem;
+        resize: none;
+        display: block;
+    }
+
+    .contenedor__input__botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+
+    .contenedor__output__imagen {
+        display: none;
+    }
+
+    .footer {
+        padding: 1rem;
+        
     }
    
 }

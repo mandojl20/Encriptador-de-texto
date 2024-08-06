@@ -25,7 +25,7 @@ function encriptar() {
         document.getElementById("contenedor__boton3").style.display = "show";
         document.getElementById("contenedor__boton3").style.display = "inherit";
         contenedor__output__imagen
-        //document.getElementsByClassName("#contenedor__output__imagen").style.display = "none";
+        document.getElementsByClassName("#contenedor__output__imagen").style.display = "none";
     }else {
         imagen.style.display = 'block';
         mensaje.textContent = "";
@@ -65,6 +65,7 @@ function desencriptar() {
         document.getElementById("output_mensaje").style.display = "inherit";
         document.getElementById("contenedor__boton3").style.display = "show";
         document.getElementById("contenedor__boton3").style.display = "inherit";
+        document.getElementsByClassName("#contenedor__output__imagen").style.display = "none";
     }else {
         imagen.style.display = 'block';
         mensaje.textContent = "";
